@@ -55,6 +55,7 @@ public class OrderServiceTest {
         FoodOrderDTO resulyDTO = orderService.saveFoodOrderInDb(mockFEClientDTO);
 
         assertEquals(FoodOrderMapper.INSTANCE.mapFoodOrdertoFoodOrderDTO(mockFoodOrder), resulyDTO);
+        verify(sequenceGenerator, times(1)).generateNextOrderId();
         verify(orderRepo, times(1)).save(mockFoodOrder);
     }
 
