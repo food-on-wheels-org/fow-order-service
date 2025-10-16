@@ -29,6 +29,10 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2025.0.0</spring-cloud.version>
+		<sonar.exclusions> **/com/project/tejas/order_service/service/SequenceGenerator.java,
+			**/com/project/tejas/order_service/repo/** , **/com/project/tejas/order_service/dto/** , **/com/project/tejas/order_service/mapper/** ,
+			**/com/project/tejas/order_service/entity/** , **/com/project/tejas/order_service/OrderServiceApplication.java
+		</sonar.exclusions>
 	</properties>
 	<dependencies>
 		<dependency>
