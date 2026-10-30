@@ -34,3 +34,7 @@ Spring Boot, Spring Data JPA, Mongo Atlas, Eureka Client, Docker, Kubernetes, Je
 Image: `tejassrivathsa/order-service:latest`  
 Deployed to AWS EKS using ArgoCD.  
 MongoDB Atlas provides cloud NoSQL data storage.
+
+
+## Part of
+[food-on-wheels-org/README](https://github.com/food-on-wheels-org/README), the overview of the full application.
